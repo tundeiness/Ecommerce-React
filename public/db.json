@@ -1,0 +1,158 @@
+{
+    "items":[
+        {
+            "id": 0,
+            "price":15.2,
+            "sku": 1655270018762,
+            "description":"retro bag from the 80s child in you",
+            "type":"pouch-bag",
+            "brand":"alfonso-ramirez",
+            "gender": "women"
+        },
+        {
+            "id": 1,
+            "price":10.15,
+            "sku": 1697360018762,
+            "description":"chic comfortable bag for all occasions",
+            "type":"handbag",
+            "brand":"arno-senoner",
+            "gender": "women"
+        },
+        {
+            "id": 2,
+            "price":25.2,
+            "sku":67255142342098,
+            "description":"easy use handbag",
+            "type":"handbag",
+            "brand":"arno-senoner",
+            "gender": "women"
+        },
+        {
+            "id": 3,
+            "price":30.25,
+            "sku": 1982514424272,
+            "description":"extra large bag for all your beauty products",
+            "type":"handbag",
+            "brand":"artem-beliaikin",
+            "gender": "women"
+        },
+        {
+            "id": 4,
+            "price":8.30,
+            "sku": 9887355226662,
+            "description":"urban theme bag for all works",
+            "type":"satchel bag",
+            "brand":"ashkan-forouzani",
+            "gender": "Unisex"
+        },
+        {
+            "id": 5,
+            "price":19.24,
+            "sku": 3452678919087,
+            "description":"stylish trendy and fun bag for parties",
+            "type":"handbag",
+            "brand":"creative-headline",
+            "gender": "women"
+        },
+        {
+            "id": 6,
+            "price":95.29,
+            "sku": 178825344264,
+            "description":"stylish knapsack for travels",
+            "type":"knapsack",
+            "brand":"Gabrielle-henderson",
+            "gender": "women"
+        },
+        {
+            "id": 7,
+            "price":115.2,
+            "sku": 162744352777,
+            "description":"Crocodile skin stylish handbag",
+            "type":"handbag",
+            "brand":"Irene-Kredenets",
+            "gender": "women"
+        },
+        {
+            "id": 8,
+            "price":210.9,
+            "sku": 6255132141612,
+            "description":"Soft leather patterned bag",
+            "type":"pouch bag",
+            "brand":"James Ree",
+            "gender": "women"
+        },
+        {
+            "id": 9,
+            "price":105.21,
+            "sku": 432315512127,
+            "description":"trendy pure leather bags designed for trendy occassions",
+            "type":"handbag",
+            "brand":"Jordan Nix",
+            "gender": "women"
+        },
+        {
+            "id": 10,
+            "price":35.75,
+            "sku": 22287728927,
+            "description":"utility knapsack suitable for all works",
+            "type":"Backpack",
+            "brand":"Jude Beck",
+            "gender": "men"
+        },
+        {
+            "id": 11,
+            "price":42.2,
+            "sku": 73663553527,
+            "description":"Trendy and fun backpack  for women",
+            "type":"knapsack",
+            "brand":"Korie Cull",
+            "gender": "women"
+        },
+        {
+            "id": 12,
+            "price":290.8,
+            "sku": 10990928762,
+            "description":"Sturdy full leather backpack cum briefcase",
+            "type":"backpack",
+            "brand":"Lina Verovaya",
+            "gender": "men"
+        },
+
+        {
+            "id": 13,
+            "price":321.43,
+            "sku": 3655256278,
+            "description":"Full leather backpack with a briefcase design",
+            "type":"backpack",
+            "brand":"Ranurte",
+            "gender": "men"
+        },
+        {
+            "id": 14,
+            "price":185.2,
+            "sku": 52233325731,
+            "description":"stylish travel bag for all occasions",
+            "type":"travel bag",
+            "brand":"Sam hojati",
+            "gender": "women"
+        },
+        {
+            "id": 15,
+            "price":19.5,
+            "sku": 320929917227,
+            "description":"simple backpack for multiple purposes",
+            "type":"backpack",
+            "brand":"Sun lingyan",
+            "gender": "unisex"
+        },
+        {
+            "id": 16,
+            "price":100.5,
+            "sku": 602817763672,
+            "description":"Professional and stylish backpack for office use",
+            "type":"backpack",
+            "brand":"Taylor Heery",
+            "gender": "men"
+        }
+    ]
+}
