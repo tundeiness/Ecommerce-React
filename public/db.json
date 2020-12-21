@@ -7,7 +7,8 @@
             "description":"retro bag from the 80s child in you",
             "type":"pouch-bag",
             "brand":"alfonso-ramirez",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/alfonso-ramirez.png"
         },
         {
             "id": 1,
@@ -16,7 +17,8 @@
             "description":"chic comfortable bag for all occasions",
             "type":"handbag",
             "brand":"arno-senoner",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/arno-senoner.png"
         },
         {
             "id": 2,
@@ -25,7 +27,8 @@
             "description":"easy use handbag",
             "type":"handbag",
             "brand":"arno-senoner",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/arno-senoner-Z.png"
         },
         {
             "id": 3,
@@ -34,7 +37,8 @@
             "description":"extra large bag for all your beauty products",
             "type":"handbag",
             "brand":"artem-beliaikin",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/artem-beliaikin.png"
         },
         {
             "id": 4,
@@ -43,7 +47,8 @@
             "description":"urban theme bag for all works",
             "type":"satchel bag",
             "brand":"ashkan-forouzani",
-            "gender": "Unisex"
+            "gender": "Unisex",
+            "image":"./items/ashkan-forouzani.png"
         },
         {
             "id": 5,
@@ -52,7 +57,8 @@
             "description":"stylish trendy and fun bag for parties",
             "type":"handbag",
             "brand":"creative-headline",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/creative-headline.png"
         },
         {
             "id": 6,
@@ -61,7 +67,8 @@
             "description":"stylish knapsack for travels",
             "type":"knapsack",
             "brand":"Gabrielle-henderson",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/gabrielle-henderson.png"
         },
         {
             "id": 7,
@@ -70,7 +77,8 @@
             "description":"Crocodile skin stylish handbag",
             "type":"handbag",
             "brand":"Irene-Kredenets",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/irene-kredenets.jpg"
         },
         {
             "id": 8,
@@ -79,7 +87,8 @@
             "description":"Soft leather patterned bag",
             "type":"pouch bag",
             "brand":"James Ree",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/james-ree.png"
         },
         {
             "id": 9,
@@ -88,7 +97,8 @@
             "description":"trendy pure leather bags designed for trendy occassions",
             "type":"handbag",
             "brand":"Jordan Nix",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/jordan-nix.png"
         },
         {
             "id": 10,
@@ -97,7 +107,8 @@
             "description":"utility knapsack suitable for all works",
             "type":"Backpack",
             "brand":"Jude Beck",
-            "gender": "men"
+            "gender": "men",
+            "image":"./items/jude-beck.png"
         },
         {
             "id": 11,
@@ -106,7 +117,8 @@
             "description":"Trendy and fun backpack  for women",
             "type":"knapsack",
             "brand":"Korie Cull",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/Korie-cull.png"
         },
         {
             "id": 12,
@@ -115,7 +127,8 @@
             "description":"Sturdy full leather backpack cum briefcase",
             "type":"backpack",
             "brand":"Lina Verovaya",
-            "gender": "men"
+            "gender": "men",
+            "image":"./items/lina-verovaya.png"
         },
 
         {
@@ -125,7 +138,8 @@
             "description":"Full leather backpack with a briefcase design",
             "type":"backpack",
             "brand":"Ranurte",
-            "gender": "men"
+            "gender": "men",
+            "image":"./items/ranurte.png"
         },
         {
             "id": 14,
@@ -134,7 +148,8 @@
             "description":"stylish travel bag for all occasions",
             "type":"travel bag",
             "brand":"Sam hojati",
-            "gender": "women"
+            "gender": "women",
+            "image":"./items/sam-hojati-M.jpg"
         },
         {
             "id": 15,
@@ -143,7 +158,8 @@
             "description":"simple backpack for multiple purposes",
             "type":"backpack",
             "brand":"Sun lingyan",
-            "gender": "unisex"
+            "gender": "unisex",
+            "image":"./items/sun-lingyan.png"
         },
         {
             "id": 16,
@@ -152,7 +168,8 @@
             "description":"Professional and stylish backpack for office use",
             "type":"backpack",
             "brand":"Taylor Heery",
-            "gender": "men"
+            "gender": "men",
+            "image":"./items/taylor-heery.png"
         }
     ]
 }
