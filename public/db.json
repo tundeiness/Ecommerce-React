@@ -8,7 +8,8 @@
             "type":"pouch-bag",
             "brand":"alfonso-ramirez",
             "gender": "women",
-            "image":"./items/alfonso-ramirez.png"
+            "image":"./items/alfonso-ramirez.png",
+            "alt-image":"public/items/alfonso-ramirez.png"
         },
         {
             "id": 1,
