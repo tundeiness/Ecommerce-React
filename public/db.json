@@ -9,7 +9,7 @@
             "brand":"alfonso-ramirez",
             "gender": "women",
             "image":"./items/alfonso-ramirez.png",
-            "alt-image":"public/items/alfonso-ramirez.png"
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873011-d3fb7580-4440-11eb-9ca3-b35c4a068033.png"
         },
         {
             "id": 1,
@@ -19,7 +19,8 @@
             "type":"handbag",
             "brand":"arno-senoner",
             "gender": "women",
-            "image":"./items/arno-senoner.png"
+            "image":"./items/arno-senoner.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873081-f2617100-4440-11eb-9ade-aca8fe525f61.png"
         },
         {
             "id": 2,
@@ -29,7 +30,8 @@
             "type":"handbag",
             "brand":"arno-senoner",
             "gender": "women",
-            "image":"./items/arno-senoner-Z.png"
+            "image":"./items/arno-senoner-Z.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873304-3fddde00-4441-11eb-9fcd-e9b61a7e2c71.png"
         },
         {
             "id": 3,
@@ -39,7 +41,8 @@
             "type":"handbag",
             "brand":"artem-beliaikin",
             "gender": "women",
-            "image":"./items/artem-beliaikin.png"
+            "image":"./items/artem-beliaikin.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873220-20df4c00-4441-11eb-8312-4acd852d1f67.png"
         },
         {
             "id": 4,
@@ -49,7 +52,8 @@
             "type":"satchel bag",
             "brand":"ashkan-forouzani",
             "gender": "Unisex",
-            "image":"./items/ashkan-forouzani.png"
+            "image":"./items/ashkan-forouzani.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873386-5b48e900-4441-11eb-85b4-215d4fe636cf.png"
         },
         {
             "id": 5,
@@ -59,7 +63,8 @@
             "type":"handbag",
             "brand":"creative-headline",
             "gender": "women",
-            "image":"./items/creative-headline.png"
+            "image":"./items/creative-headline.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873462-74ea3080-4441-11eb-8a58-b80ddb31feb5.png"
         },
         {
             "id": 6,
@@ -69,7 +74,8 @@
             "type":"knapsack",
             "brand":"Gabrielle-henderson",
             "gender": "women",
-            "image":"./items/gabrielle-henderson.png"
+            "image":"./items/gabrielle-henderson.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873541-90edd200-4441-11eb-90cd-0c42106e0fc3.png"
         },
         {
             "id": 7,
@@ -79,7 +85,8 @@
             "type":"handbag",
             "brand":"Irene-Kredenets",
             "gender": "women",
-            "image":"./items/irene-kredenets.jpg"
+            "image":"./items/irene-kredenets.jpg",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102880378-80425980-444b-11eb-87fe-8ebceaa0f92d.png"
         },
         {
             "id": 8,
@@ -89,7 +96,8 @@
             "type":"pouch bag",
             "brand":"James Ree",
             "gender": "women",
-            "image":"./items/james-ree.png"
+            "image":"./items/james-ree.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873719-c692bb00-4441-11eb-970e-038082db9162.png"
         },
         {
             "id": 9,
@@ -99,7 +107,8 @@
             "type":"handbag",
             "brand":"Jordan Nix",
             "gender": "women",
-            "image":"./items/jordan-nix.png"
+            "image":"./items/jordan-nix.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873786-ddd1a880-4441-11eb-8f4d-4256e49bc207.png"
         },
         {
             "id": 10,
@@ -109,7 +118,8 @@
             "type":"Backpack",
             "brand":"Jude Beck",
             "gender": "men",
-            "image":"./items/jude-beck.png"
+            "image":"./items/jude-beck.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873868-f772f000-4441-11eb-9a64-542ee3301c00.png"
         },
         {
             "id": 11,
@@ -119,7 +129,8 @@
             "type":"knapsack",
             "brand":"Korie Cull",
             "gender": "women",
-            "image":"./items/Korie-cull.png"
+            "image":"./items/Korie-cull.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102873951-13769180-4442-11eb-862d-b05dc383a08b.png"
         },
         {
             "id": 12,
@@ -129,7 +140,8 @@
             "type":"backpack",
             "brand":"Lina Verovaya",
             "gender": "men",
-            "image":"./items/lina-verovaya.png"
+            "image":"./items/lina-verovaya.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102874005-2b4e1580-4442-11eb-9ba5-4d11bd6b7076.png"
         },
 
         {
@@ -140,7 +152,8 @@
             "type":"backpack",
             "brand":"Ranurte",
             "gender": "men",
-            "image":"./items/ranurte.png"
+            "image":"./items/ranurte.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102874076-43be3000-4442-11eb-8ff0-a6f989523fa4.png"
         },
         {
             "id": 14,
@@ -150,7 +163,8 @@
             "type":"travel bag",
             "brand":"Sam hojati",
             "gender": "women",
-            "image":"./items/sam-hojati-M.jpg"
+            "image":"./items/sam-hojati-M.jpg",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102880236-4a04da00-444b-11eb-80e9-83135cc1903b.png"
         },
         {
             "id": 15,
@@ -160,17 +174,30 @@
             "type":"backpack",
             "brand":"Sun lingyan",
             "gender": "unisex",
-            "image":"./items/sun-lingyan.png"
+            "image":"./items/sun-lingyan.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102874251-7d8f3680-4442-11eb-9b36-db9376edd940.png"
         },
         {
             "id": 16,
             "price":100.5,
             "sku": 602817763672,
-            "description":"Professional and stylish backpack for office use",
-            "type":"backpack",
+            "description":"Professional and stylish handbag for office use",
+            "type":"hand bag",
             "brand":"Taylor Heery",
-            "gender": "men",
-            "image":"./items/taylor-heery.png"
+            "gender": "women",
+            "image":"./items/taylor-heery.png",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102874317-97307e00-4442-11eb-88a4-d531fc171c3c.png"
+        },
+        {
+            "id": 17,
+            "price":50.5,
+            "sku": 688773662829,
+            "description":"trendy recreational backpack",
+            "type":"backpack",
+            "brand":"Shunsuke Ono",
+            "gender": "unisex",
+            "image":"./items/shunsuke-ono",
+            "altImage":"https://user-images.githubusercontent.com/25479050/102874463-c646ef80-4442-11eb-8bf6-2608da95825f.png"
         }
     ]
 }
