@@ -4,7 +4,9 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Filter = ({ count, sort, changeSize }) => {
+const Filter = ({
+  count, sort, type, changeSize, handleChangeType,
+}) => {
 //   const [bags, setBags] = useState([]);
 //   const [filteredBags, setFilteredBags] = useState([]);
 
@@ -41,7 +43,7 @@ const Filter = ({ count, sort, changeSize }) => {
       <div className="col-md-4">
         <label>
           Order by
-          <select className="form-control" value={sort} onChange={changeSize}>
+          <select className="form-control" value={type} onChange={changeSize}>
             <option value="">Select</option>
             <option value="lowest">Lowest to Highest</option>
             <option value="highest">Highest to Lowest</option>
@@ -50,7 +52,16 @@ const Filter = ({ count, sort, changeSize }) => {
       </div>
 
       <div className="col-md-4">
-        <p>Cart component</p>
+        <label>
+          Filter type
+          <select className="form-control" value={sort} onChange={handleChangeType}>
+            <option value="">All</option>
+            <option value="hand bag">hand bag</option>
+            <option value="travel bag">travel bag</option>
+            <option value="knapsack">knapsack</option>
+            <option value="backpack">backpack</option>
+          </select>
+        </label>
       </div>
     </div>
 
