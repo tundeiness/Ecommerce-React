@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
@@ -15,8 +16,8 @@ const App = () => {
   const [state, setState] = useState('');
   const [bagType, setBagType] = useState('');
   const [size, setSize] = useState('');
-  const [genderUse, setGenderUse] = useState('');
-  const [cartItems, setCartItems] = useState([]);
+  // const [genderUse, setGenderUse] = useState('');
+  const [cartItem, setCartItem] = useState([]);
 
 
   const fetchBags = () => fetch('http://localhost:8000/items')
@@ -26,26 +27,31 @@ const App = () => {
     .then(res => res.json());
 
   const handleAddToCart = (e, bag) => {
-    // console.log("i'm here");
-    let bagInCart = false;
-    setCartItems(cartItems);
+    const count = 0;
+    const cartCopy = cartItem;
+    const bagInCart = false;
 
-    cartItems.forEach(item => {
-      if (item.id === bag.id) {
-        bagInCart = true;
-        item.count += 1;
-      }
-    });
+
+    // cartCopy.forEach(item => {
+    //   if (item.id === bag.id) {
+    //     bagInCart = true;
+    //     item.count += 1;
+    //     count += 1;
+    //   }
+    // });
 
     if (!bagInCart) {
-      cartItems.push({ ...bag, count: 1 });
+      cartItem.push({ ...bag, count: 1 });
     }
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    return cartItems;
+    localStorage.setItem('cartItem', JSON.stringify(cartItem));
+    setState(bag);
+    return cartItem;
   };
 
-  const handleItemRemoval = () => {
-    console.log("i'm here");
+  const handleItemRemoval = (e, itm) => {
+    const anFilt = cartItem.filter(f => f.id !== itm.id);
+    setCartItem(anFilt);
+    localStorage.setItem('cartItem', anFilt);
   };
 
 
@@ -74,30 +80,30 @@ const App = () => {
   };
 
 
-  const sortGenderUse = () => {
-    if (sort !== '') {
-      bags.sort((a, b) => ((sort === 'lowest') ? (a.price < b.price ? 1 : -1) : (a.price > b.price ? 1 : -1)));
-    } else {
-      bags.sort((a, b) => (a.id < b.id ? 1 : -1));
-    }
+  // const sortGenderUse = () => {
+  //   if (sort !== '') {
+  //     bags.sort((a, b) => ((sort === 'lowest') ? (a.price < b.price ? 1 : -1) : (a.price > b.price ? 1 : -1)));
+  //   } else {
+  //     bags.sort((a, b) => (a.id < b.id ? 1 : -1));
+  //   }
 
-    const filtBag = bags.filter(a => a.gender.indexOf(genderUse) >= 0);
+  //   const filtBag = bags.filter(a => a.gender.indexOf(genderUse) >= 0);
 
-    if (genderUse !== '') {
-      return { filtBag };
-    }
-    return setFilteredBags(bags);
-  };
+  //   if (genderUse !== '') {
+  //     return { filtBag };
+  //   }
+  //   return setFilteredBags(bags);
+  // };
 
-  const listGender = () => {
-    setState(sortGenderUse);
-  };
+  // const listGender = () => {
+  //   setState(sortGenderUse);
+  // };
 
 
-  const changeGender = e => {
-    setGenderUse(e.target.value);
-    listGender();
-  };
+  // const changeGender = e => {
+  //   setGenderUse(e.target.value);
+  //   listGender();
+  // };
 
   const handleChangeType = e => {
     setBagType(e.target.value);
@@ -107,6 +113,9 @@ const App = () => {
   useEffect(() => {
     fetchBags().then(data => setBags(data));
     fetchFiltered().then(data => setFilteredBags(data));
+    // if (localStorage.getItem('cartItem')) {
+    //   setCartItem(JSON.parse(localStorage.getItem('cartItem')));
+    // }
   }, []);
 
   // console.log(bags);
@@ -123,7 +132,7 @@ const App = () => {
           <Bags bags={filteredBags} handleAddToCart={handleAddToCart} />
         </div>
         <div className="col-md-4">
-          <Cart cartItems={cartItems} handleItemRemoval={handleItemRemoval} />
+          <Cart cartItem={cartItem} handleItemRemoval={handleItemRemoval} />
         </div>
       </div>
     </div>
