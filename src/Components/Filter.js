@@ -56,10 +56,12 @@ const Filter = ({
           Filter type
           <select className="form-control" value={sort} onChange={handleChangeType}>
             <option value="">All</option>
-            <option value="hand bag">hand bag</option>
+            <option value="handbag">handbag</option>
             <option value="travel bag">travel bag</option>
             <option value="knapsack">knapsack</option>
             <option value="backpack">backpack</option>
+            <option value="pouch bag">pouch bag</option>
+            <option value="satchel bag">satchel bag</option>
           </select>
         </label>
       </div>
