@@ -47,6 +47,8 @@ const Cart = ({ cartItem, handleItemRemoval }) => {
                   className="btn btn-danger"
                   onClick={e => handleItemRemoval(e, data)}
                 >
+                  {' '}
+                  {' '}
                   X
 
                 </button>
