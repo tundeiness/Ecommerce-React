@@ -1,4 +1,8 @@
 /* eslint-disable react/prop-types */
+import { connect } from 'react-redux';
+import React, { useEffect } from 'react';
+
+import fetchBags from '../actions/BagActions';
 import Currency from '../Helpers/util';
 
 const Bags = ({ bags, handleAddToCart }) => {
@@ -16,6 +20,10 @@ const Bags = ({ bags, handleAddToCart }) => {
       </div>
     </div>
   ));
+
+  useEffect(() => {
+    fetchBags();
+  }, []);
   return (
     <div className="row">
       {/* <p>These are the bags</p> */}
@@ -24,4 +32,8 @@ const Bags = ({ bags, handleAddToCart }) => {
   );
 };
 
-export default Bags;
+const mapStateToProps = state => ({
+  bags: state.bags.items,
+});
+
+export default connect(mapStateToProps, { fetchBags })(Bags);

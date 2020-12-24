@@ -3,11 +3,24 @@
 /* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
+// import {
+//   BrowserRouter as Router, Switch, Route,
+// } from 'react-router-dom';
+import {
+  useParams, Route, useHistory,
+  BrowserRouter as Router,
+  Link,
+  useRouteMatch,
+} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import { Provider } from 'react-redux';
+import store from './Components/store';
 import Bags from './Components/Bags';
 import Filter from './Components/Filter';
 import './App.css';
 import Cart from './Components/Cart';
+
 
 const App = () => {
   const [bags, setBags] = useState([]);
@@ -121,21 +134,23 @@ const App = () => {
   // console.log(bags);
 
   return (
-    <div className="container">
-      <h1>Basic eCommerce page</h1>
-      <hr />
-      <div className="row">
-        <div className="col-md-8">
-          <h1>Item component</h1>
-          <Filter size={size} sort={sort} changeSize={changeSize} handleChangeType={handleChangeType} count={filteredBags.length} />
-          <hr />
-          <Bags bags={filteredBags} handleAddToCart={handleAddToCart} />
-        </div>
-        <div className="col-md-4">
-          <Cart cartItem={cartItem} handleItemRemoval={handleItemRemoval} />
+    <Provider store={store}>
+      <div className="container">
+        <h1>Basic eCommerce page</h1>
+        <hr />
+        <div className="row">
+          <div className="col-md-8">
+            <h1>Item component</h1>
+            <Filter size={size} sort={sort} changeSize={changeSize} handleChangeType={handleChangeType} count={filteredBags.length} />
+            <hr />
+            <Bags bags={filteredBags} handleAddToCart={handleAddToCart} />
+          </div>
+          <div className="col-md-4">
+            <Cart cartItem={cartItem} handleItemRemoval={handleItemRemoval} />
+          </div>
         </div>
       </div>
-    </div>
+    </Provider>
   );
 };
 
