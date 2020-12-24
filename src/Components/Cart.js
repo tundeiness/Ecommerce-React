@@ -57,12 +57,9 @@ const Cart = ({ cartItem, handleItemRemoval }) => {
           {' '}
           {Currency(cartItem.reduce((a, c) => a + c.price * c.count, 0))}
           <br />
-          {/* No. of Item in cart
-          {' '}
-          {cartItem.reduce((a, c) => a + c.count, 0)} */}
         </div>
         )}
-      {cartItem.length === 0 ? ' ' : (<button type="button" className="btn btn-primary">Checkout</button>)}
+      {cartItem.length === 0 ? ' ' : (<button type="button" className="btn btn-primary checkout">Checkout</button>)}
 
     </div>
   );

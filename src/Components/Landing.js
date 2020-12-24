@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
@@ -6,17 +7,15 @@
 import React, { useState, useEffect } from 'react';
 import Bags from './Bags';
 import Filter from './Filter';
-import './App.css';
 import Cart from './Cart';
 
-const App = () => {
+const Landing = () => {
   const [bags, setBags] = useState([]);
   const [filteredBags, setFilteredBags] = useState([]);
   const [sort, setSort] = useState('');
   const [state, setState] = useState('');
   const [bagType, setBagType] = useState('');
   const [size, setSize] = useState('');
-  // const [genderUse, setGenderUse] = useState('');
   const [cartItem, setCartItem] = useState([]);
 
 
@@ -31,14 +30,6 @@ const App = () => {
     const cartCopy = cartItem;
     const bagInCart = false;
 
-
-    // cartCopy.forEach(item => {
-    //   if (item.id === bag.id) {
-    //     bagInCart = true;
-    //     item.count += 1;
-    //     count += 1;
-    //   }
-    // });
 
     if (!bagInCart) {
       cartItem.push({ ...bag, count: 1 });
@@ -80,31 +71,6 @@ const App = () => {
   };
 
 
-  // const sortGenderUse = () => {
-  //   if (sort !== '') {
-  //     bags.sort((a, b) => ((sort === 'lowest') ? (a.price < b.price ? 1 : -1) : (a.price > b.price ? 1 : -1)));
-  //   } else {
-  //     bags.sort((a, b) => (a.id < b.id ? 1 : -1));
-  //   }
-
-  //   const filtBag = bags.filter(a => a.gender.indexOf(genderUse) >= 0);
-
-  //   if (genderUse !== '') {
-  //     return { filtBag };
-  //   }
-  //   return setFilteredBags(bags);
-  // };
-
-  // const listGender = () => {
-  //   setState(sortGenderUse);
-  // };
-
-
-  // const changeGender = e => {
-  //   setGenderUse(e.target.value);
-  //   listGender();
-  // };
-
   const handleChangeType = e => {
     setBagType(e.target.value);
     listBags();
@@ -113,20 +79,17 @@ const App = () => {
   useEffect(() => {
     fetchBags().then(data => setBags(data));
     fetchFiltered().then(data => setFilteredBags(data));
-    // if (localStorage.getItem('cartItem')) {
-    //   setCartItem(JSON.parse(localStorage.getItem('cartItem')));
-    // }
   }, []);
 
-  // console.log(bags);
 
   return (
     <div className="container">
-      <h1>Basic eCommerce page</h1>
+
+      <h4 className="text-center">Basic eCommerce page</h4>
+
       <hr />
-      <div className="row">
+      <div className="row justify-content-center">
         <div className="col-md-8">
-          <h1>Item component</h1>
           <Filter size={size} sort={sort} changeSize={changeSize} handleChangeType={handleChangeType} count={filteredBags.length} />
           <hr />
           <Bags bags={filteredBags} handleAddToCart={handleAddToCart} />
@@ -139,4 +102,5 @@ const App = () => {
   );
 };
 
-export default App;
+
+export default Landing;

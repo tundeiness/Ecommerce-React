@@ -1,20 +1,15 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 
 const Filter = ({
   count, sort, type, changeSize, handleChangeType,
 }) => {
-//   const [bags, setBags] = useState([]);
-//   const [filteredBags, setFilteredBags] = useState([]);
-
-
   const fetchBags = () => fetch('http://localhost:8000/items')
     .then(res => res.json());
 
-  // const fetchFiltered =()=> fetch
 
   useEffect(() => {
     // fetchBags().then(data => setBags(data));

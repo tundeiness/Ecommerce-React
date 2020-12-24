@@ -18,7 +18,6 @@ const Bags = ({ bags, handleAddToCart }) => {
   ));
   return (
     <div className="row">
-      {/* <p>These are the bags</p> */}
       {bagList}
     </div>
   );
