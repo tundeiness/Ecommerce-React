@@ -3,7 +3,7 @@ import Currency from '../Helpers/util';
 
 const Bags = ({ bags, handleAddToCart }) => {
   const bagList = bags.map(data => (
-    <div key={data.id} className="col-md-4 mb-4">
+    <div key={data.id} className="col-md-4 mb-4 bags">
       <div className="thumbnail text-center">
         <a href={`#${data.id}`} onClick={e => handleAddToCart(e, data)}>
           <img src={data.altImage} alt={data.type} />
